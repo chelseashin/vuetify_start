@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-toolbar app dark height="150" class="purple" >
+    <v-toolbar app dark height="120" class="purple" >
       <v-toolbar-title class="headline text-uppercase">
         <span>Hi</span>
         <span class="font-weight-light">Five</span>
@@ -23,12 +23,12 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+// import mainHeader from './components/mainHeader'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // 'mainHeader': mainHeader, 
   },
   data () {
     return {
