@@ -20,15 +20,20 @@
       <router-view></router-view>
     </v-content>
   </v-app>
+  <app-header></app-header>
+  <app-footer></app-footer>
 </template>
 
 <script>
-// import mainHeader from './components/mainHeader'
+import AppHeader from './components/AppHeader.vue'
+import AppFooter from './components/AppFooter.vue'
+
 
 export default {
   name: 'App',
   components: {
-    // 'mainHeader': mainHeader, 
+    'app-Header': AppHeader, 
+    'app-Footer': AppFooter, 
   },
   data () {
     return {
