@@ -10,8 +10,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
+      name: 'main',
+      component: Main
     },
     {
       path: '/about',
@@ -20,6 +20,21 @@ export default new Router({
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+    },
+    {
+      path: '/vision',
+      name: 'about',
+      component: () => import('./views/Vision.vue')
+    },
+    {
+      path: '/howto',
+      name: 'howto',
+      component: () => import('./views/HowTo.vue')
+    },
+    {
+      path: '/team',
+      name: 'team',
+      component: () => import('./views/Team.vue')
     }
   ]
 })
