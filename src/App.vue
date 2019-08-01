@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-toolbar app dark height="120" class="purple" >
+    <!-- <v-toolbar app dark height="120" class="purple" >
       <v-toolbar-title class="headline text-uppercase">
         <span>Hi</span>
         <span class="font-weight-light">Five</span>
@@ -13,15 +13,16 @@
       >
         <span class="mr-2">Latest Release</span>
       </v-btn>
-    </v-toolbar>
+    </v-toolbar> -->
 
     <v-content>
-      <HelloWorld/>
       <router-view></router-view>
+      <app-Header/>
+      <app-Footer/>
     </v-content>
+  
   </v-app>
-  <app-header></app-header>
-  <app-footer></app-footer>
+  
 </template>
 
 <script>
